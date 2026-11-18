@@ -1,0 +1,405 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,graphicx,booktabs,tabularx,float,changepage,array,textcomp}
+\usepackage{cite}
+\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\usepackage{setspace,microtype,url}
+\usepackage[hypertexnames=false]{hyperref}
+\setstretch{1.10}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{1em}
+\setlength{\emergencystretch}{3em}
+\clubpenalty=10000\widowpenalty=10000
+\pagestyle{plain}
+\raggedbottom
+\renewcommand{\topfraction}{.95}
+\renewcommand{\bottomfraction}{.90}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.80}
+\setcounter{topnumber}{3}\setcounter{bottomnumber}{2}\setcounter{totalnumber}{5}
+
+\renewcommand{\figurename}{Fig}
+\graphicspath{{figures/}}
+
+
+\hypersetup{hidelinks,pdftitle={Transcript switches and the timing of development},pdfauthor={Robin Gounder, Samuel Schmidt},pdfkeywords={alternative splicing; differential transcript usage; developmental timing; microexons; axon guidance; nonsense-mediated decay; isoform function}}
+
+\title{Transcript switches and the timing of development}
+
+\author{Robin Gounder\textsuperscript{1}, Samuel Schmidt\textsuperscript{2,3}\\[4pt]\small \textsuperscript{1}University of Cambridge\\\small \textsuperscript{2}Vaionex Corporation\\\small \textsuperscript{3}Cornell University}
+
+\date{18 November 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+An RNA isoform that becomes abundant as a tissue matures may mark a change in cell composition, alter the fate of a progenitor or help determine when a developmental event occurs. These possibilities make different predictions. In mouse cortical progenitors, expression of the neuronal form of ninein favours production of neurons. In the nematode epidermis, early expression of either LIN-29 isoform brings cell fusion forward by two larval stages. In flies, a brief perturbation of the male-specific \textit{fruitless} protein around pupation impairs courtship in adulthood. These experiments respectively change the probability of a fate, the onset of a transition and the capacity for a later behaviour. We examine how studies can distinguish a shift in transcript usage, the appearance of a functional protein and the onset of a phenotype. A causal account of endogenous isoform replacement must connect these observations in the responding lineage and identify the source of the product when it acts across cells.
+
+\end{abstract}
+
+\noindent\textbf{Keywords:} alternative splicing; differential transcript usage; developmental timing; microexons; axon guidance; nonsense-mediated decay; isoform function
+
+\clearpage
+
+\section{Introduction}
+
+Commissural axons in the embryonic spinal cord must approach the midline, cross it and then respond to repulsive cues that limit recrossing. In mice, deleting a short exon in \textit{Robo1} changes the early pattern of crossing. A cue from the floor plate, a specialised region at the ventral midline, triggers local translation of a second receptor isoform, ROBO3.2, from RNA already present in the distal axon \cite{Johnson2019,Chen2008,Colak2013}. Sampling RNA at successive ages can reveal a change in exon use. Identifying cue-dependent translation requires localising protein synthesis relative to the floor plate.
+
+In developing human cortex, Patowary and colleagues compared the progenitor-rich germinal zone with the neuron-rich cortical plate. Of 10,809 genes with multiple expressed isoforms, 2,679 differed in transcript proportions between the two regions. Two previously unannotated \textit{SMARCC2} transcripts were preferentially used in the germinal zone, although total \textit{SMARCC2} expression showed no significant regional difference \cite{Patowary2024}. The regional difference could arise if progenitors change isoform usage as they differentiate, if the two regions differ in cellular composition, or through both processes.
+
+Previous reviews describe the regulation, measurement and developmental functions of alternative splicing \cite{Kalsotra2011,Choquet2025,Sousa2026}. Here we ask what evidence would establish that changing which transcript a gene makes helps set the time of a developmental event. Three observations bear on that question. Transcript measurements establish when usage changes within a lineage. Measurements of protein abundance and location establish when the altered product reaches the cells or compartments in which it acts. A shift in the onset of an independently scored event after isoform-specific perturbation tests whether the product can influence timing. These observations can come apart. A stored RNA may be translated only at an anatomical boundary, and a protein needed to build a circuit may have its first measurable behavioural consequence much later.
+
+\section{What a switch atlas measures}
+
+Transcript usage is the fraction of a gene's measured RNA attributable to each transcript isoform. Differential transcript usage means that those fractions change between samples. A switch in the dominant transcript requires a change in which form is most abundant. With two forms, a fall from 51\% to 49\% exchanges their ranks. A fall from 80\% to 60\% changes that fraction by ten times as much while preserving their order. To infer synaptic protein abundance from either shift, one would also need to know the absolute transcript abundance, how efficiently and where the RNA is translated, and how much protein reaches and persists at the synapse.
+
+\subsection{What cortical exon usage reveals about age}
+
+Weyn-Vanhentenryck and colleagues grouped cassette exons in developing mouse cortex by how their inclusion changed with age \cite{Weyn2018}. A cassette exon can be included in or skipped from a mature RNA. Its inclusion fraction, often reported as percent spliced in (PSI), estimates what proportion of transcripts spanning the event contain the exon. Figure~1 follows the same 2,883 exon events through two cortical age series, keeping the row order fixed. Several exons can come from one gene, and several full-length transcripts can carry the same exon.
+
+\begin{figure}[htbp]
+
+\centering
+
+\includegraphics[width=\linewidth,height=.61\textheight,keepaspectratio]{figures/cortical.pdf}
+
+\caption{Mature neuronal populations differ in how closely their exon usage resembles that of mature cortex. Panels a and b show exon inclusion fractions at nine ages in mouse cortex and eight in frontal cortex. Corresponding rows show the same exon event. The 2,883 events are grouped by published module (M1--M4 contain 1,118, 1,027, 385 and 353 events), then sorted by first-age inclusion in panel a. Pale grey marks the 1,277 missing event-by-age values. E, embryonic day. P, postnatal day. For panel c we calculated the median and interquartile range of late minus early inclusion within each exon, using the 2,577 events with both endpoints measured in both series (M1--M4: 979, 938, 336, 324). The intervals describe differences across exons. Panel d gives sample counts by the authors' overall inferred splicing stage. Blank cells indicate zero samples. All 16 samples have chronological stage 6 in the source. Replotted from supplementary datasets S5 and S8b \cite{Weyn2018}.}
+
+\end{figure}
+
+The endpoint comparison uses the 2,577 events measured at the first and last age in both series. In module M2, the median within-exon increase in inclusion was 21 percentage points in cortex and 19 in frontal cortex. In M3, the median within-exon change was close to zero in both series, although some exons increased in inclusion and others decreased (Figure~1c). The interquartile ranges summarise variation among exons within each module.
+
+When the cortical splicing stages were applied to other neuronal populations, all 16 samples in Figure~1d belonged to the latest chronological age group. Yet all three sensory receptor samples scored at cortical stage 1, while all four central neuron samples scored at stage 6 \cite{Weyn2018}. Low cortical stage scores in sensory cells are compatible with a lineage-specific exon programme that persists at maturity. Establishing a delay would require following that sensory lineage through its own maturation.
+
+Across seven organs in six mammals and chicken, developmentally changing splicing events were more conserved than events with stable usage \cite{Mazin2021}. Conservation makes a reproducible switch a stronger candidate for functional study. Models of splicing error also predict many rare products whose prevalence depends on expression and the cost of misprocessing \cite{Saudemont2017}. An exon used reproducibly at the same developmental stage across species therefore has a different evidential basis from a rare isoform detected in a single sample.
+
+\subsection{Which cells contribute the RNA?}
+
+A bulk sample weights each cell type by how much of the gene's RNA it contributes. In a two-cell-type example, an isoform accounts for 80\% of a gene's RNA in type A and 20\% in type B. Each A cell produces four times as much RNA from the gene as each B cell. Reducing the proportion of A cells from 80\% to 20\% lowers the pooled isoform fraction from about 76\% to 50\%, even with fixed usage in each cell type. Interpreting a bulk shift therefore requires estimates of both cell composition and gene expression per cell type. Profiles from the same donors, compared within a defined lineage and maturation state, can test whether the regional difference persists \cite{Joglekar2024,Patowary2024}.
+
+In differentiating mouse muscle cells, a previously unannotated first exon distinguished an early \textit{Fhl3} transcript from the form that predominated later. Detection of the new first exon supported the transcript assembly and suggested that the dominant transcription start site changed during differentiation \cite{Trapnell2010}. Long reads can link a transcript's start to its internal exons and end. Recovery of complete transcript ends and rare isoforms varies across protocols \cite{Glinos2022,LRGASP2024}. For \textit{SMARCC2}, estimating each isoform's share across ages requires reads that distinguish the two transcripts in matched cell populations. Reads confined to a junction common to both forms cannot resolve their relative abundance.
+
+The mouse cortical ninein gene (\textit{Nin}) illustrates how to move beyond a regional comparison. Inclusion of exon 29 changes the carboxyl terminus of ninein and disrupts its association with the centrosomal protein CEP250. Zhang and colleagues expressed the neuronal or progenitor isoform in embryonic mouse cortex at day 13.5. Two days later, fewer labelled cells remained in the ventricular zone after expression of the neuronal form. Position alone is ambiguous because migration also changed. When individual progenitors were isolated and their daughter cells scored, the neuronal isoform favoured production of neurons \cite{Zhang2016Nin}. This experiment identifies a change in daughter-cell fate. Measuring the interval to differentiation in those daughters would address the distinct question of developmental timing.
+
+\section{Which molecular step sets the time of action?}
+
+In commissural axons, developmental regulation acts at two steps in receptor production. Splicing determines which ROBO1 receptor form is available for signalling, and a floor-plate cue regulates local synthesis of ROBO3.2 from RNA already present in the axon.
+
+\subsection{A microexon and the onset of midline crossing}
+
+\textit{Robo1} and \textit{Robo2} contain a conserved microexon, 6b, encoding a short linker between extracellular immunoglobulin-like domains. In rat dorsal spinal cord, the exon-included forms predominated early and declined from embryonic day 11 to 14 as expression of the NOVA splicing regulators increased. In mouse mutants lacking \textit{Nova1} and \textit{Nova2}, inclusion increased. Reporter experiments traced repression to sequences flanking the microexon. The two ROBO1 forms showed similar binding to the SLIT2 ligand fragment used in the assay. In transfected cells, SLIT2 stimulation produced stronger RAC1 activation and CDC42 inhibition with the exon-included form \cite{Johnson2019}. The relative surface abundance of the two receptors in embryonic growth cones remains unknown.
+
+Removing both NOVA regulators impairs midline crossing. To estimate the contribution of \textit{Robo1} and \textit{Robo2} splicing to this defect, Johnson and colleagues deleted one genomic copy of exon 6b at one or both receptor genes in mice lacking \textit{Nova1} and \textit{Nova2}. The ratio of contralateral to ipsilateral axon labelling, normalised to wild type, rose from 0.52 in the double mutant to 0.77 with the \textit{Robo1} edit and 0.84 with both edits. The \textit{Robo2} edit alone gave 0.52 (Figure~2b). In mice with intact NOVA regulation, deleting both copies of \textit{Robo1} exon 6b increased lumbar commissure thickness early in development, when many axons were approaching the midline. The thickness difference seen in the lumbar cord was absent at the brachial level, where crossing was further advanced \cite{Johnson2019}.
+
+\begin{figure}[htbp]
+
+\centering
+
+\includegraphics[width=\linewidth,height=.61\textheight,keepaspectratio]{figures/robo.pdf}
+
+\caption{ROBO microexon deletions alter early commissure thickness and midline crossing. Panel a shows alternative paths through exon 6b. Arcs represent connectivity. Panel b shows the E12.5 contralateral-to-ipsilateral DiI signal ratio relative to wild type. In b, an edit denotes deletion of one copy of exon 6b at the indicated locus in Nova1/2 double-knockout mice. Panel c shows early lumbar ROBO3-positive commissure thickness divided by floor-plate thickness at E10.5. Here exon deletions are homozygous and NOVA is intact. Points and bars show the published means and standard deviations. The two workbooks use different SD conventions (sample SD in b, population SD in c). Embryo counts give the number of animals per group. Reading counts give the number of individual measurements. The workbooks do not identify which measurements came from the same embryo. Replotted from source data for figures 4C and 7D \cite{Johnson2019}.}
+
+\end{figure}
+
+The two experiments establish that \textit{Robo1} exon 6b influences midline crossing (Figure~2). Commissure thickness at a single age cannot distinguish earlier arrival from a change in the number or packing of axons at the floor plate. Following individual axons from approach to exit would distinguish those explanations.
+
+\subsection{A midline cue triggers local translation}
+
+ROBO3.1 helps commissural axons enter and cross the midline. ROBO3.2 limits recrossing on the far side \cite{Chen2008}. Axons contain \textit{Robo3.2} RNA before crossing. In spinal explants, medium conditioned by floor-plate tissue induced local production of ROBO3.2 protein. Retention of intron 26 places a stop codon upstream of the final exon junction. When the axon translates \textit{Robo3.2}, that arrangement makes the RNA susceptible to nonsense-mediated decay \cite{Colak2013}. Disrupting the decay factor UPF2 in commissural neurons increased postcrossing ROBO3.2 and altered axon trajectories \cite{Colak2013}. The floor-plate cue thus allows the axon to make protein from a stored transcript while coupling its use to loss of the template (Figure~3a).
+
+Before crossing, \textit{Robo1} exon 6b inclusion reports the relative abundance of transcripts encoding the two receptor forms. For \textit{Robo3}, measuring axonal RNA and newly synthesised protein on either side of the floor plate could locate the onset of translation. Newly translated ROBO3.2 can accumulate even as its RNA declines. A measurement from the whole spinal cord pools axons that have yet to encounter the cue with those that have already crossed.
+
+\begin{figure}[htbp]
+
+\centering
+
+\includegraphics[width=\linewidth,height=.61\textheight,keepaspectratio]{figures/routes.pdf}
+
+\caption{Four mechanisms link RNA processing to protein production or function. In panel a, a cue from the floor plate permits commissural axons to translate stored \textit{Robo3.2} RNA bearing retained intron 26. Translation also exposes that RNA to nonsense-mediated decay (NMD) \cite{Chen2008,Colak2013}. In panel b, alternative transcription initiation in myocardium can preserve RBM20 activity. RBM20 regulates inclusion of titin spring exons. Inclusion of more spring sequence produces a longer extensible region. The transcription-start schematic, spring lengths and arrows are qualitative. The passive-tension comparison comes from developing rat cardiomyocytes \cite{Guo2012RBM20,Radke2026,Opitz2004}. In panel c, inclusion of the \textit{Tra2b} poison exon limits TRA2B abundance in germ cells and thereby influences downstream splicing \cite{Dalgliesh2025}. Panel d shows how astrocytes in the postnatal mouse subventricular zone supply soluble DLK1. In a separate rescue, restoring the membrane form to deficient stem cells enabled soluble DLK1 to stimulate neurosphere formation. Arrows show the requirements identified by separate rescue experiments \cite{Ferron2011}.}
+
+\end{figure}
+
+\section{How does isoform choice alter protein function?}
+
+Alternative splicing can change a protein's mechanical properties, limit its abundance or alter its interactions with other proteins. Titin, TRA2B and MEF2D illustrate these three consequences in developing tissues.
+
+\subsection{Changes in protein mechanics, dose and activity}
+
+In rat heart, a 3.7-MDa N2BA form of titin was present before birth. By one week after birth, the smaller 3.0-MDa N2B form predominated. When stretched, fetal cardiomyocytes developed approximately one-fifteenth the titin-based passive tension of adult cardiomyocytes. A model of elasticity related the force to the length of the extensible region \cite{Opitz2004}. These measurements link titin spring length to passive tension in developing cardiomyocytes. Several transcripts can encode proteins that migrate in the same band, limiting assignment of the mechanical phenotype to an individual transcript.
+
+RBM20 regulates splicing of the titin spring exons \cite{Guo2012RBM20}. Transcription from an internal \textit{Rbm20} start site allows translation to initiate in exon 2, producing a shorter, active splicing regulator. Mice with the canonical start disrupted retained some RBM20 activity. Titin splicing and cardiac compliance in these mice fell between the values in wild-type mice and those lacking the regulator's RNA-binding motif \cite{Radke2026}. Residual activity can therefore preserve some repression of titin spring exons after loss of the canonical start (Figure~3b).
+
+In mouse germ cells, the \textit{Tra2b} transcript can include a poison exon that introduces a premature stop codon and targets the RNA for decay. TRA2B promotes inclusion of its own poison exon, providing negative feedback. Deleting the exon increased \textit{Tra2b} expression and disrupted downstream splicing. Germ cells died during meiotic prophase, whereas earlier dividing germ cells were spared by the exon deletion \cite{Dalgliesh2025}. The poison exon is also regulated in activated T cells \cite{Karginov2024}. Its reuse outside the germ line illustrates why the stage of cell loss must be established separately in each lineage. Restoring TRA2B to its normal abundance in mutant germ cells would test whether excess regulator contributes to meiotic cell loss (Figure~3c).
+
+As skeletal muscle precursors (myoblasts) differentiate, alternative splicing produces a MEF2D form that escapes inhibitory phosphorylation and recruits a coactivator to muscle genes \cite{Sebastian2013}. In cells depleted of RBFOX proteins, supplying the muscle-specific form improved differentiation. The ubiquitous form failed to do so \cite{Runfola2015}. In a separate comparison with similar amounts of the introduced proteins, the muscle-specific form partially restored fusion of myoblasts depleted of RBFOX2 \cite{Singh2014}. Depleting a second RBFOX2 target, ROCK2, also partially restored fusion \cite{Singh2014}. These experiments implicate multiple splicing targets in the phenotype. Rescue at successive stages could establish when the muscle-specific MEF2D form is required.
+
+\subsection{DLK1 splice forms serve different roles in two neural stem-cell niches}
+
+In the postnatal mouse subventricular zone, astrocytes favour \textit{Dlk1} splice forms that retain a protein cleavage site. A protease can therefore release soluble DLK1 from the cell surface. Neighbouring neural stem cells favour forms that lack the site and remain membrane-bound. Ferrón, \mbox{Ferguson-Smith} and colleagues restored one form at a time to cells lacking \textit{Dlk1}. Astrocytes supplied with the soluble form again stimulated neurosphere formation by wild-type stem cells in co-culture. In the reciprocal experiment, soluble DLK1 stimulated neurosphere formation by mutant stem cells only if those cells expressed the membrane-bound form (Figure~3d) \cite{Ferron2011}.
+
+Reciprocal crosses in the same study used sequence variants to distinguish transcripts from the maternal and paternal alleles. At birth, neural stem cells and niche astrocytes expressed the paternal \textit{Dlk1} allele. By postnatal day 7, both alleles contributed, even though an assay of the whole subventricular zone still indicated expression only from the paternal allele. Both splice-form classes could be expressed from either allele \cite{Ferron2011}. These measurements place the first detectable contribution from the maternal allele within the first postnatal week. Dating the emergence of the splice preference would require measuring the relative abundance of both forms in each cell population over that interval.
+
+In the adult hippocampus, Montalbán-Loro and colleagues found that stem cells in the dentate gyrus preferentially expressed the cleavable form. Differentiated astrocytes from that niche expressed little \textit{Dlk1}. Deleting either parental copy in cells expressing glial fibrillary acidic protein (GFAP) reduced the number of immature neurons in the dentate gyrus \cite{Montalban2021}. Both parental alleles contribute to neurogenesis in each niche, while the splice form favoured by neural stem cells differs between the dentate gyrus and the subventricular zone.
+
+During water-maze training, mice lacking either parental copy of \textit{Dlk1} in GFAP-expressing cells reached the platform progressively faster, as did controls. Once the platform was removed, controls concentrated their search in its former quadrant. Mutants showed no preference among quadrants. Because the deletion persisted, the spatial memory deficit could reflect altered circuit development, an ongoing requirement for DLK1 in adulthood, or both \cite{Montalban2021}.
+
+\subsection{Protein identity and dose at the synapse}
+
+SNAP-25 contributes to the fusion of synaptic vesicles with the presynaptic membrane. Two mutually exclusive versions of exon 5 encode variants that differ by nine amino acids. In postnatal mouse hippocampus, the \textit{Snap25a} transcript accounts for a larger share of \textit{Snap25} RNA in granule neuroblasts than in mature excitatory neurons. Some inhibitory precursors already use exon 5b more frequently than excitatory precursors \cite{Joglekar2021}. In rat brain, the b protein rises markedly after birth, while the a protein can also rise \cite{Prescott2011}. As the total amount increases, a form that loses RNA share can still accumulate as protein.
+
+Johansson and colleagues replaced the b coding sequence with a second copy encoding a. Both homozygous mouse lines made only the a form. With a selection cassette retained, total brain SNAP-25 protein averaged 80.7\% of the line's wild-type level. After excision it averaged 110.9\% of the corresponding control (Figure~4). Paired-pulse facilitation measures how much the synaptic response increases on the second of two closely spaced stimuli. In hippocampal slices from 12- to 16-day-old mice from the excised line, facilitation was weaker than in controls when stimulus pairs were delivered at 0.2 Hz. At 0.5 Hz the estimated difference did not reach statistical significance (P = 0.085) \cite{Johansson2008}.
+
+\begin{figure}[htbp]
+
+\centering
+
+\includegraphics[width=\linewidth,height=.61\textheight,keepaspectratio]{figures/snap25.pdf}
+
+\caption{Replacing SNAP-25b with SNAP-25a alters total SNAP-25 abundance differently in two mouse lines. The lines retain or lack the selection cassette used in allele construction. Panel a shows the exon-5a share of total Snap25a plus Snap25b RNA in mouse brain on postnatal day 14 (five mice per genotype). Wild-type points are littermate controls for the corresponding line. Panel b shows total RNA and protein in homozygous mice at postnatal day 14 (RNA) or days 14--15 (protein) relative to each line's wild-type littermates (six mice per genotype). Points and error bars show published means and standard errors. At 100\%, the authors report exclusive 5a expression without a numerical standard error. The wild-type reference in b is 100\% by normalisation. Data transcribed from figures 1B--D and 2B--D of Johansson et al. \cite{Johansson2008}.}
+
+\end{figure}
+
+In older mice from the excised line, plasma membrane fractions contained less SNAP-25 than in controls. The size of the reduction depended on the antibody used, and the comparison included three mice per genotype. These data suggest altered localisation in older mice. Membrane-associated SNAP-25 abundance in the younger mice used for the synaptic recordings remains unknown \cite{Johansson2008}. Restoring the b form at different ages could distinguish an early role in building the circuit from an ongoing role in transmission. Interpreting early rescue requires evidence that the introduced protein has cleared from synapses before recording. Interpreting late rescue requires confirmation that the protein has reached the synapse.
+
+\section{When is a product required?}
+
+An isoform-specific rescue establishes that the supplied product can support a function. Its timing can be tested in two directions. Advancing expression asks whether cells become competent to carry out the event early. Restricting depletion to successive stages asks when expression is needed for a later outcome. These experiments are especially informative when the duration of protein exposure and the onset of the phenotype can be measured independently.
+
+\subsection{Advancing an epidermal transition and perturbing a future circuit}
+
+In the epidermis of \textit{Caenorhabditis elegans}, lateral seam cells normally fuse during the fourth larval stage. Nuclear staining in these cells revealed LIN-29b late in the third larval stage and LIN-29a only midway through the fourth. Isoform-specific mutants showed that seam cell fusion requires LIN-29b and proceeds in the absence of LIN-29a \cite{Azzi2020}. Azzi and colleagues expressed each isoform separately under an epidermal promoter active from the first larval stage. By early in the second stage, more than 90\% of animals in each group showed complete seam cell fusion. Gonad morphology independently placed these animals in early L2 (Figure~5c) \cite{Azzi2020}. The two proteins are under different temporal controls. LIN-41 represses translation of \textit{lin-29a} RNA, whereas HBL-1 delays LIN-29b accumulation through a mechanism that may be indirect \cite{Azzi2020}. Either protein can promote fusion when present early. The experiment therefore places a timing function at the level of LIN-29 availability, while leaving open whether changing the endogenous ratio of the isoforms at a fixed total dose would advance fusion.
+
+In fruit flies, Chen and colleagues induced knockdown of the male-specific \textit{fruitless} product, FruM, for two days in each of nine cohorts spanning development and early adult life. They measured the fraction of time adult males spent courting females. The median was 7\% after knockdown around pupation, compared with 60\% and 67\% in the adjacent windows. Of 24 males per cohort, three mated after knockdown in the preceding window, none in the pupal window and five in the following window (Figure~5) \cite{Chen2021Fru}. Brain staining confirmed that FruM fell after induction at stages 5 and 7. Adults exposed at stage 5 again showed strong FruM staining despite the courtship deficit. Adults exposed at stages 6--9 retained less staining, although their female-directed courtship was less impaired \cite{Chen2021Fru}. Adult brain staining was therefore a poor predictor of courtship across these cohorts. Staining establishes that FruM was detectable again in adulthood after stage-5 induction, but it cannot date recovery in the neurons that support courtship.
+
+\begin{figure}[htbp]
+
+\centering
+
+\includegraphics[width=\linewidth,height=.61\textheight,keepaspectratio]{figures/fruitless.pdf}
+
+\caption{Timed perturbations identify a developmental requirement in flies and advance cell fusion in nematodes. In panels a and b, each column represents a cohort in which FruM knockdown was induced for two days beginning at the indicated stage. Panel a shows the courtship index for each of 24 males per cohort. Horizontal bars mark medians. Dots are spread horizontally to resolve individuals at similar values. Panel b shows how many of the 24 males mated. Filled squares denote males that mated. Positions in the two panels do not link individual flies. Stage 5 coincides with pupation. The scheduled knockdown window is distinct from the duration of protein depletion. Replotted from the source data for figure 1C,D of Chen et al. \cite{Chen2021Fru}. Panel c marks the larval stages at which seam cells fuse under normal conditions and after early epidermal expression of LIN-29a or LIN-29b. Gonad morphology independently confirmed the early L2 stage. Symbols indicate observed stages, with no estimate of elapsed time between them \cite{Azzi2020}.}
+
+\end{figure}
+
+\subsection{Placental compensation delays the onset of fetal growth restriction}
+
+At the imprinted mouse \textit{Igf2} locus, the P0 promoter drives expression of a transcript specific to the labyrinthine trophoblast at the maternal--fetal exchange surface. Constância, \mbox{Ferguson-Smith} and colleagues examined mice lacking this transcript. Placental growth restriction preceded fetal growth restriction. Increased active amino acid transport initially helped sustain fetal growth despite reduced passive nutrient transfer \cite{Constancia2002}.
+
+A follow-up compared loss of P0 alone with loss of \textit{Igf2} throughout the fetus and placenta. On embryonic day 14, P0 mutant placentas weighed 82\% as much as wild-type littermate placentas, but their fetuses averaged 99\% of wild-type weight. In the complete knockout, the corresponding values were 79\% and 78\%. By day 19, fetal weight in the P0 mutants had fallen to 75\% of wild type. Tracer measurements on day 16 showed that the P0 mutant placenta transferred 58\% more glucose per gram of placenta than its wild-type counterpart. This compensatory increase was absent in the complete knockout \cite{Constancia2005}. Thus the age at which fetal weight diverges depends partly on how much transport the remaining placental tissue can sustain. The constitutive deletion identifies a requirement for P0 expression. Testing whether promoter choice itself changes during gestation would require measuring transcripts from each \textit{Igf2} start site.
+
+A delayed phenotype can thus arise even when the initiating lesion persists from the outset. At \textit{Igf2}, transport per gram of placenta can temporarily compensate for reduced placental mass. At \textit{fruitless}, a short period of depletion leaves a deficit apparent after FruM has reappeared in the adult brain. In both cases the age at which the phenotype becomes measurable provides an incomplete guide to when gene function mattered \cite{Constancia2005,Chen2021Fru}.
+
+\subsection{What does rescue of a disease-associated isoform establish?}
+
+During neuronal differentiation, usage of two alternative exons in the calcium-channel gene \textit{CACNA1C} normally shifts from exon 8A towards exon 8. In neurons derived from people with Timothy syndrome type 1, transcripts containing exon 8A persist. In affected individuals, the variant in this exon produces the Gly406Arg substitution, which impairs channel inactivation \cite{Panagiotakos2019}. Redirecting splicing towards exon 8 reduced the abnormal calcium response to depolarisation in patient-derived cortical organoids and improved interneuron migration in fused forebrain organoids \cite{Chen2024TS}. This intervention also reduces mutant channel expression. Rescue in patient cells therefore leaves open whether unaffected neurons require the same switch to mature.
+
+Table~1 compares interventions that alter isoform identity, protein availability or the stage of expression. Each supports a different inference about timing.
+
+\begin{table}[htbp]
+
+\caption{Evidence for a timing function at eight loci}
+
+\small
+
+\begin{tabularx}{\textwidth}{@{}*{3}{>{\raggedright\arraybackslash}X}@{}}\toprule
+
+\textbf{Locus and current evidence} & \textbf{Unresolved interpretation} & \textbf{Discriminating observation}\\\midrule
+
+\textit{SMARCC2}. Isoform proportions differ between two regions of the developing human cortex \cite{Patowary2024} & Changing RNA contributions of progenitors and neurons, or a shift within a lineage & Compare isoform usage across ages within matched cell populations from multiple donors.\\
+
+\addlinespace[9pt]
+
+\textit{Robo1}. Exon deletion increases early lumbar commissure thickness \cite{Johnson2019} & Earlier arrival, tighter axon bundles or altered crossing could each thicken the commissure & Follow identified axons through arrival and crossing while measuring receptor form and position.\\
+
+\addlinespace[9pt]
+
+\textit{Robo3}. A floor-plate cue induces local translation of stored RNA \cite{Colak2013} & The protein may persist after local translation subsides & Measure nascent and total axonal protein alongside RNA before and after exposure to the cue.\\
+
+\addlinespace[9pt]
+
+Titin. A developmental shift in protein size accompanies altered passive tension \cite{Opitz2004} & Several transcripts can contribute to one mechanical class & Measure full-length transcripts, protein size and passive tension at matched sarcomere lengths.\\
+
+\addlinespace[9pt]
+
+\textit{Tra2b}. Poison-exon deletion disrupts meiosis \cite{Dalgliesh2025} & Excess TRA2B protein or another effect of deleting the exon & Restore TRA2B to its usual abundance in germ cells and measure downstream splicing and meiosis.\\
+
+\addlinespace[9pt]
+
+\textit{Snap25}. Replacing the b form alters synaptic responses \cite{Johansson2008} & Earlier circuit assembly or a continuing requirement for the b product & Compare early and late rescue with matched local dose, confirmed onset and verified clearance.\\
+
+\addlinespace[9pt]
+
+\textit{lin-29}. Early epidermal expression of either isoform advances seam cell fusion \cite{Azzi2020} & Early expression also changes protein dose & Compare fusion onset after advancing LIN-29b expression at matched nuclear abundance.\\
+
+\addlinespace[9pt]
+
+\textit{fruitless}. Pupal knockdown impairs later female-directed courtship \cite{Chen2021Fru} & Adult brain staining recovers after stage-5 induction. The duration of depletion in courtship neurons is uncertain & Measure FruM in courtship neurons through depletion and recovery, then score adult courtship.\\
+
+\bottomrule\end{tabularx}
+
+\end{table}
+
+\section{Interpreting and predicting developmental trajectories}
+
+\subsection{When do two regions diverge and reconverge?}
+
+In developing mouse brain, Gounder identified isoforms whose expression diverged temporarily between forebrain and midbrain \cite{GounderThesis2025}. Gounder and Hamilton subsequently defined transient divergence in transcript usage by testing whether a focal region differed from two mutually concordant comparison regions at one stage and agreed with them at the stages immediately before and after it \cite{GounderHamilton2026}. Such a regional pattern is compatible with a lasting switch within each region. If two regions switch at different ages and retain the later form, their usage diverges and then converges. The same between-region difference can arise when only one region briefly changes and returns to its starting state (Figure~6). Within-region trajectories distinguish sustained replacement from a reversible change.
+
+\begin{figure}[htbp]
+
+\centering
+
+\includegraphics[width=\linewidth,height=.61\textheight,keepaspectratio]{figures/timing.pdf}
+
+\caption{Two developmental histories give the same transient difference between regions. Gounder and Hamilton assessed transient divergence across developing brain regions \cite{GounderHamilton2026}. The curves here are constructed examples of transcript A as a fraction of two products from one gene. Transcript B accounts for the remainder. In panel a both regions undergo replacement at different ages and retain the later state through the final observation. In panel b, the fraction rises briefly in one region and remains constant in the other. Lines connect successive constructed values. Each lower plot shows the absolute difference between the regions above it. The absolute between-region differences at the five ages are 0, 0, 0.6, 0 and 0 in both panels. The fractions in the upper panels distinguish sustained replacement in both regions from a temporary change in one.}
+
+\end{figure}
+
+If a splice change delays differentiation, comparison at the same age retains that delay as part of the phenotype. Comparison at the same maturation state asks whether a difference in exon usage persists among cells that have reached a similar stage. Both comparisons are informative. Stage matching alone can conceal the very delay under study, especially if the stage is assigned using the exon whose role is being tested.
+
+A transient change requires evidence that usage returns to its initial level. A wide confidence interval for the change from baseline can include both zero and biologically important departures. Evidence for recovery requires enough precision to place that interval within a prespecified range of negligible change, with uncertainty estimated across independent donors or litters. For an effect attributed to a minor product, the informative endpoint is the fraction of that product, even if the overall transcript proportions look little changed.
+
+\subsection{Can future transcript switches be predicted?}
+
+Forecasting a developmental switch requires predicting a specified change in transcript usage from information available before it occurs. Sequence models can estimate how a variant affects a splice site or predict RNA coverage \cite{SpliceAI2019,Pangolin2022,Borzoi2025,AlphaGenome2026}. Splice-site predictions inform transcript identity when the site is unique to a product. Inclusion frequencies for two exons can remain constant even as their combinations on full-length molecules change. At \textit{Robo3}, predicting the onset of protein production would also require knowing when the axon encounters the floor-plate cue.
+
+IsoPrism estimates current transcript proportions from short-read expression using long-read measurements for training. In five transfer settings, its accuracy in identifying the dominant isoform exceeded that of the best comparator by 0.85--2.35 percentage points. Scoring required the leading form to account for at least half the measured transcripts and exceed the second by ten percentage points or more \cite{IsoPrism2026}. A model could score well under this rule while misdating the crossover that matters in a developmental series. In the cross-study comparison, transcripts with identical intron chains were grouped, so changes confined to transcript ends could also go undetected \cite{IsoPrism2026}.
+
+The application to developing mouse cortex lacked matched long-read measurements against which to test the predicted changes \cite{IsoPrism2026}. A prospective benchmark would compare the forecast with isoform-resolved measurements at later ages, using donors or litters held out from training. Two benchmarks are available before the outcome is known. One predicts that the current dominant form persists. The other uses the dominant form at the target age in an independent series.
+
+Stable genes reveal how often the model predicts a spurious switch. Among genes that do switch, the last age with the early form dominant and the first age with the late form dominant bound the observed transition. Forecasts can be assessed against this interval without assigning an exact age that the sampling cannot resolve. Time-series smoothing that draws on later observations can refine a retrospective trajectory \cite{DICEseq2016}. Prospective evaluation must withhold those observations until scoring.
+
+\section{Outlook}
+
+Two \textit{SMARCC2} transcripts account for a larger share of the gene's RNA in the germinal zone than in the cortical plate \cite{Patowary2024}. If each cell type maintains similar isoform proportions across regions, weighting those proportions by each type's contribution to total \textit{SMARCC2} RNA should reproduce the bulk difference. A change in isoform proportions as cells of the same lineage mature would support developmental regulation of transcript choice. If the transcripts encode distinguishable proteins, localising each protein would identify the cells and compartments in which it could act. Altering isoform usage at defined stages and measuring differentiation independently would then test whether the shift contributes to maturation.
+
+The ninein, LIN-29 and FruM experiments illustrate why even a convincing functional effect leaves a specific timing question. More neurons among the daughters of a cortical progenitor establish a change in fate probability. Earlier seam cell fusion establishes that LIN-29 availability can advance a transition. Impaired courtship after pupal depletion identifies a period during which FruM contributes to later function \cite{Zhang2016Nin,Azzi2020,Chen2021Fru}. For an endogenous transcript switch, the strongest test would advance and delay the change in isoform proportions while measuring total product abundance and scoring the event in the same lineage. Movement of the event in the predicted direction would connect the timing of transcript choice to the timing of development.
+
+\section*{Generative AI disclosure}
+
+OpenAI Codex agents contributed substantially to source discovery, literature synthesis, and mathematical exposition.
+
+\section*{Data and Code Availability}
+
+Figure~3 presents original schematics of the mechanisms cited in its legend. Figures 1 and 2 use the supplementary workbooks of Weyn-Vanhentenryck et al. and Johnson et al. \cite{Weyn2018,Johnson2019}. Figure~4 uses published group summaries from Johansson et al. \cite{Johansson2008}. Figure~5c summarises the stage of seam cell fusion reported by Azzi et al. \cite{Azzi2020}. Panels a and b of Figure~5 use individual courtship measurements and cohort mating counts from the source data for figure 1 of Chen et al. \cite{Chen2021Fru}. The Figure~6 trajectories are defined in the plotting script. The source package includes the scripts, figure inputs, editable manuscript and bibliography.
+
+The editable manuscript, figure inputs and plotting code are archived at \href{https://github.com/Kohze/developmental-transcript-switches/tree/v1.0.0}{Kohze/developmental-transcript-switches, v1.0.0}.
+
+\section*{Funding}
+
+Robin Gounder was supported by a Biotechnology and Biological Sciences Research Council (\mbox{BBSRC}) Doctoral Training Partnership studentship at the University of Cambridge (studentship reference 2116112).
+
+\section*{Author contributions}
+
+Individual contributions and correspondence details await author confirmation.
+
+\section*{Competing interests}
+
+The competing-interest declaration awaits author confirmation.
+
+\section*{Research scope}
+
+This narrative review focuses on animal studies that link transcript measurements to developmental stages or functional perturbations. Figure~1c summarises endpoint changes calculated from published exon inclusion values. Other empirical panels replot published measurements.
+
+\section*{Supporting information}
+
+The source package includes editable figure files and their PDF exports. The verification script checks the numerical inputs, display items and links in the reading copies.
+
+\begin{thebibliography}{99}
+
+\small
+
+\setlength{\itemsep}{1.5pt}
+
+\bibitem{Johnson2019}Johnson V, Junge HJ, Chen Z. Temporal regulation of axonal repulsion by alternative splicing of a conserved microexon in mammalian Robo1 and Robo2. eLife. 2019;8:e46042. \href{https://doi.org/10.7554/elife.46042}{\nolinkurl{10.7554/elife.46042}}.
+
+\bibitem{Chen2008}Chen Z, Gore BB, Long H et al. Alternative splicing of the Robo3 axon guidance receptor governs the midline switch from attraction to repulsion. Neuron. 2008;58:325-332. \href{https://doi.org/10.1016/j.neuron.2008.02.016}{\nolinkurl{10.1016/j.neuron.2008.02.016}}.
+
+\bibitem{Colak2013}Colak D, Ji SJ, Porse BT et al. Regulation of axon guidance by compartmentalized nonsense-mediated mRNA decay. Cell. 2013;153:1252-1265. \href{https://doi.org/10.1016/j.cell.2013.04.056}{\nolinkurl{10.1016/j.cell.2013.04.056}}.
+
+\bibitem{Patowary2024}Patowary A, Zhang P, Jops C et al. Developmental isoform diversity in the human neocortex informs neuropsychiatric risk mechanisms. Science (New York, N.Y.). 2024;384:eadh7688. \href{https://doi.org/10.1126/science.adh7688}{\nolinkurl{10.1126/science.adh7688}}.
+
+\bibitem{Kalsotra2011}Kalsotra A, Cooper TA. Functional consequences of developmentally regulated alternative splicing. Nature reviews. Genetics. 2011;12:715-729. \href{https://doi.org/10.1038/nrg3052}{\nolinkurl{10.1038/nrg3052}}.
+
+\bibitem{Choquet2025}Choquet K, Patop IL, Churchman LS. The regulation and function of post-transcriptional RNA splicing. Nature reviews. Genetics. 2025;26:378-394. \href{https://doi.org/10.1038/s41576-025-00836-z}{\nolinkurl{10.1038/s41576-025-00836-z}}.
+
+\bibitem{Sousa2026}Sousa-Luís R, Carmo-Fonseca M. Tools and tactics for studying alternative splicing. Nature reviews. Genetics. 2026;27:642-660. \href{https://doi.org/10.1038/s41576-026-00952-4}{\nolinkurl{10.1038/s41576-026-00952-4}}.
+
+\bibitem{Weyn2018}Weyn-Vanhentenryck SM, Feng H, Ustianenko D et al. Precise temporal regulation of alternative splicing during neural development. Nature communications. 2018;9:2189. \href{https://doi.org/10.1038/s41467-018-04559-0}{\nolinkurl{10.1038/s41467-018-04559-0}}.
+
+\bibitem{Mazin2021}Mazin PV, Khaitovich P, Cardoso-Moreira M et al. Alternative splicing during mammalian organ development. Nature genetics. 2021;53:925-934. \href{https://doi.org/10.1038/s41588-021-00851-w}{\nolinkurl{10.1038/s41588-021-00851-w}}.
+
+\bibitem{Saudemont2017}Saudemont B, Popa A, Parmley JL et al. The fitness cost of mis-splicing is the main determinant of alternative splicing patterns. Genome biology. 2017;18:208. \href{https://doi.org/10.1186/s13059-017-1344-6}{\nolinkurl{10.1186/s13059-017-1344-6}}.
+
+\bibitem{Joglekar2024}Joglekar A, Hu W, Zhang B et al. Single-cell long-read sequencing-based mapping reveals specialized splicing patterns in developing and adult mouse and human brain. Nature neuroscience. 2024;27:1051-1063. \href{https://doi.org/10.1038/s41593-024-01616-4}{\nolinkurl{10.1038/s41593-024-01616-4}}.
+
+\bibitem{Trapnell2010}Trapnell C, Williams BA, Pertea G et al. Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation. Nature Biotechnology. 2010;28:511-515. \href{https://doi.org/10.1038/nbt.1621}{\nolinkurl{10.1038/nbt.1621}}.
+
+\bibitem{Glinos2022}Glinos DA, Garborcauskas G, Hoffman P et al. Transcriptome variation in human tissues revealed by long-read sequencing. Nature. 2022;608:353-359. \href{https://doi.org/10.1038/s41586-022-05035-y}{\nolinkurl{10.1038/s41586-022-05035-y}}.
+
+\bibitem{LRGASP2024}Pardo-Palacios FJ, Wang D, Reese F et al. Systematic assessment of long-read RNA-seq methods for transcript identification and quantification. Nature methods. 2024;21:1349-1363. \href{https://doi.org/10.1038/s41592-024-02298-3}{\nolinkurl{10.1038/s41592-024-02298-3}}.
+
+\bibitem{Zhang2016Nin}Zhang X, Chen MH, Wu X et al. Cell-Type-Specific Alternative Splicing Governs Cell Fate in the Developing Cerebral Cortex. Cell. 2016;166:1147-1162.e15. \href{https://doi.org/10.1016/j.cell.2016.07.025}{\nolinkurl{10.1016/j.cell.2016.07.025}}.
+
+\bibitem{Guo2012RBM20}Guo W, Schafer S, Greaser ML et al. RBM20, a gene for hereditary cardiomyopathy, regulates titin splicing. Nature medicine. 2012;18:766-773. \href{https://doi.org/10.1038/nm.2693}{\nolinkurl{10.1038/nm.2693}}.
+
+\bibitem{Radke2026}Radke MH, Badillo Lisakowski V, Meinke S et al. RBM20 isoform regulation by independent transcription start sites adapts alternative splicing in development and disease. Nature Communications. 2026;17:4607. \href{https://doi.org/10.1038/s41467-026-73230-w}{\nolinkurl{10.1038/s41467-026-73230-w}}.
+
+\bibitem{Opitz2004}Opitz CA, Leake MC, Makarenko I et al. Developmentally regulated switching of titin size alters myofibrillar stiffness in the perinatal heart. Circulation Research. 2004;94:967-975. \href{https://doi.org/10.1161/01.RES.0000124301.48193.E1}{\nolinkurl{10.1161/01.RES.0000124301.48193.E1}}.
+
+\bibitem{Dalgliesh2025}Dalgliesh C, Aldalaqan S, Atallah C et al. An ultra-conserved poison exon in the Tra2b gene encoding a splicing activator is essential for male fertility and meiotic cell division. The EMBO journal. 2025;44:877-902. \href{https://doi.org/10.1038/s44318-024-00344-6}{\nolinkurl{10.1038/s44318-024-00344-6}}.
+
+\bibitem{Ferron2011}Ferrón SR, Charalambous M, Radford E et al. Postnatal loss of Dlk1 imprinting in stem cells and niche astrocytes regulates neurogenesis. Nature. 2011;475:381-385. \href{https://doi.org/10.1038/nature10229}{\nolinkurl{10.1038/nature10229}}.
+
+\bibitem{Karginov2024}Karginov TA, Ménoret A, Leclair NK et al. Autoregulated splicing of TRA2\(\beta\) programs T cell fate in response to antigen-receptor stimulation. Science (New York, N.Y.). 2024;385:eadj1979. \href{https://doi.org/10.1126/science.adj1979}{\nolinkurl{10.1126/science.adj1979}}.
+
+\bibitem{Sebastian2013}Sebastian S, Faralli H, Yao Z et al. Tissue-specific splicing of a ubiquitously expressed transcription factor is essential for muscle differentiation. Genes \& development. 2013;27:1247-1259. \href{https://doi.org/10.1101/gad.215400.113}{\nolinkurl{10.1101/gad.215400.113}}.
+
+\bibitem{Runfola2015}Runfola V, Sebastian S, Dilworth FJ et al. Rbfox proteins regulate tissue-specific alternative splicing of Mef2D required for muscle differentiation. Journal of cell science. 2015;128:631-637. \href{https://doi.org/10.1242/jcs.161059}{\nolinkurl{10.1242/jcs.161059}}.
+
+\bibitem{Singh2014}Singh RK, Xia Z, Bland CS et al. Rbfox2-coordinated alternative splicing of Mef2d and Rock2 controls myoblast fusion during myogenesis. Molecular cell. 2014;55:592-603. \href{https://doi.org/10.1016/j.molcel.2014.06.035}{\nolinkurl{10.1016/j.molcel.2014.06.035}}.
+
+\bibitem{Montalban2021}Montalbán-Loro R, Lassi G, Lozano-Ureña A et al. Dlk1 dosage regulates hippocampal neurogenesis and cognition. Proc Natl Acad Sci U S A. 2021;118:e2015505118. \href{https://doi.org/10.1073/pnas.2015505118}{\nolinkurl{10.1073/pnas.2015505118}}.
+
+\bibitem{Joglekar2021}Joglekar A, Prjibelski A, Mahfouz A et al. A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain. Nature Communications. 2021;12:463. \href{https://doi.org/10.1038/s41467-020-20343-5}{\nolinkurl{10.1038/s41467-020-20343-5}}.
+
+\bibitem{Prescott2011}Prescott GR, Chamberlain LH. Regional and developmental brain expression patterns of SNAP25 splice variants. BMC Neuroscience. 2011;12:35. \href{https://doi.org/10.1186/1471-2202-12-35}{\nolinkurl{10.1186/1471-2202-12-35}}.
+
+\bibitem{Johansson2008}Johansson JU, Ericsson J, Janson J et al. An ancient duplication of exon 5 in the Snap25 gene is required for complex neuronal development/function. PLoS Genetics. 2008;4:e1000278. \href{https://doi.org/10.1371/journal.pgen.1000278}{\nolinkurl{10.1371/journal.pgen.1000278}}.
+
+\bibitem{Azzi2020}Azzi C, Aeschimann F, Neagu A et al. A branched heterochronic pathway directs juvenile-to-adult transition through two LIN-29 isoforms. eLife. 2020;9:e53387. \href{https://doi.org/10.7554/eLife.53387}{\nolinkurl{10.7554/eLife.53387}}.
+
+\bibitem{Chen2021Fru}Chen J, Jin S, Chen D et al. fruitless tunes functional flexibility of courtship circuitry during development. eLife. 2021;10:e59224. \href{https://doi.org/10.7554/elife.59224}{\nolinkurl{10.7554/elife.59224}}.
+
+\bibitem{Constancia2002}Constância M, Hemberger M, Hughes J et al. Placental-specific IGF-II is a major modulator of placental and fetal growth. Nature. 2002;417:945-948. \href{https://doi.org/10.1038/nature00819}{\nolinkurl{10.1038/nature00819}}.
+
+\bibitem{Constancia2005}Constância M, Angiolini E, Sandovici I et al. Adaptation of nutrient supply to fetal demand in the mouse involves interaction between the Igf2 gene and placental transporter systems. Proc Natl Acad Sci U S A. 2005;102:19219-19224. \href{https://doi.org/10.1073/pnas.0504468103}{\nolinkurl{10.1073/pnas.0504468103}}.
+
+\bibitem{Panagiotakos2019}Panagiotakos G, Haveles C, Arjun A et al. Aberrant calcium channel splicing drives defects in cortical differentiation in Timothy syndrome. eLife. 2019;8:e51037. \href{https://doi.org/10.7554/elife.51037}{\nolinkurl{10.7554/elife.51037}}.
+
+\bibitem{Chen2024TS}Chen X, Birey F, Li MY et al. Antisense oligonucleotide therapeutic approach for Timothy syndrome. Nature. 2024;628:818-825. \href{https://doi.org/10.1038/s41586-024-07310-6}{\nolinkurl{10.1038/s41586-024-07310-6}}.
+
+\bibitem{GounderThesis2025}Gounder R. The Elusive Dynamic of the Genome: Novel Sequence Patterns, Splicing and Regulation. Doctoral thesis, University of Cambridge. 2025. \href{https://doi.org/10.17863/CAM.129295}{\nolinkurl{10.17863/CAM.129295}}.
+
+\bibitem{GounderHamilton2026}Gounder R, Hamilton R. A systematic framework for detecting transient developmental transcript-usage patterns identifies an E15.5-centred midbrain candidate landscape. Repository manuscript. 2026. Version 0.1.0. \href{https://github.com/Kohze/developmental-dtu-patterns/blob/8d84703f225d64596ee6958661e0ffc9266661af/manuscript.pdf}{Archived manuscript}.
+
+\bibitem{SpliceAI2019}Jaganathan K, Kyriazopoulou Panagiotopoulou S, McRae JF et al. Predicting Splicing from Primary Sequence with Deep Learning. Cell. 2019;176:535-548.e24. \href{https://doi.org/10.1016/j.cell.2018.12.015}{\nolinkurl{10.1016/j.cell.2018.12.015}}.
+
+\bibitem{Pangolin2022}Zeng T, Li YI. Predicting RNA splicing from DNA sequence using Pangolin. Genome biology. 2022;23:103. \href{https://doi.org/10.1186/s13059-022-02664-4}{\nolinkurl{10.1186/s13059-022-02664-4}}.
+
+\bibitem{Borzoi2025}Linder J, Srivastava D, Yuan H et al. Predicting RNA-seq coverage from DNA sequence as a unifying model of gene regulation. Nature genetics. 2025;57:949-961. \href{https://doi.org/10.1038/s41588-024-02053-6}{\nolinkurl{10.1038/s41588-024-02053-6}}.
+
+\bibitem{AlphaGenome2026}Avsec \v{Z}, Latysheva N, Cheng J et al. Advancing regulatory variant effect prediction with AlphaGenome. Nature. 2026;649:1206-1218. \href{https://doi.org/10.1038/s41586-025-10014-0}{\nolinkurl{10.1038/s41586-025-10014-0}}.
+
+\bibitem{IsoPrism2026}Yan P, Liu J, Cui X et al. IsoPrism predicts isoform usage from short-read transcriptomes through structure-guided competitive allocation. Briefings in bioinformatics. 2026;27:bbag621. \href{https://doi.org/10.1093/bib/bbag621}{\nolinkurl{10.1093/bib/bbag621}}.
+
+\bibitem{DICEseq2016}Huang Y, Sanguinetti G. Statistical modeling of isoform splicing dynamics from RNA-seq time series data. Bioinformatics (Oxford, England). 2016;32:2965-2972. \href{https://doi.org/10.1093/bioinformatics/btw364}{\nolinkurl{10.1093/bioinformatics/btw364}}.
+
+\end{thebibliography}
+
+\end{document}

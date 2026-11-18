@@ -1,0 +1,11 @@
+panel,line,measure,mean_percent,sem_percent,mice_per_genotype,source_panel
+A,Retained,Wild type,16.7,1.9,5,1C
+A,Excised,Wild type,17.5,1.2,5,2C
+A,Retained,Heterozygote,51.6,1.7,5,1C
+A,Excised,Heterozygote,68.9,2.1,5,2C
+A,Retained,Homozygote,100,,5,1C
+A,Excised,Homozygote,100,,5,2C
+B,Retained,Total RNA,55.5,2.7,6,1B
+B,Excised,Total RNA,117.3,6.8,6,2B
+B,Retained,Total protein,80.7,3.6,6,1D
+B,Excised,Total protein,110.9,2.3,6,2D
